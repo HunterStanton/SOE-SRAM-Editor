@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 364);
             this.Name = "MainWindow";
-            this.Text = "Secret of Evermore SRAM Editor";
+            this.Text = "Secret of Evermore SRAM Editor - No ROM Loaded";
             this.ResumeLayout(false);
 
         }
