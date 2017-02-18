@@ -1,3 +1,5 @@
+![SOE SRAM Editor icon](https://raw.githubusercontent.com/HunterStanton/SOE-SRAM-Editor/master/readme_image.png)
+
 # SOE SRAM Editor
 A SRAM (save RAM) editor for the Super Nintendo Entertainment System game, Secret of Evermore, which is one of my all-time favorite SNES RPGs. Couldn't get enough of it as a kid, even though I wasn't very good at it.
 
