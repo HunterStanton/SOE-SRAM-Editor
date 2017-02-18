@@ -137,7 +137,7 @@ namespace SOE_SRAM_Editor
         /// <param name="e"></param>
         private void DisableLimitsMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Limits (such as alchemy ingredient limits) are disabled where applicable.\nYou MAY experience bugs in-game when going above the limits.\nWould not advise using this on a save you care about!", "Important Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Limits (such as alchemy ingredient limits) are now raised to their theoretical maximum where applicable.\nYou MAY experience bugs in-game when going above the limits.\nWould not advise using this on a save you care about!", "Important Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             LimitsLabel.Text = "Limits Disabled";
         }
         #endregion
