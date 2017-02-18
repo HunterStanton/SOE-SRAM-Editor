@@ -74,6 +74,8 @@
             this.SaveSlotSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.SaveSlotSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.ExperimentalSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.SaveSlotLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.RegionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.SaveTab.SuspendLayout();
             this.StatsTab.SuspendLayout();
             this.EquipmentTab.SuspendLayout();
@@ -440,7 +442,9 @@
             // StatusStrip
             // 
             this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.LimitsLabel});
+            this.LimitsLabel,
+            this.SaveSlotLabel,
+            this.RegionLabel});
             this.StatusStrip.Location = new System.Drawing.Point(0, 400);
             this.StatusStrip.Name = "StatusStrip";
             this.StatusStrip.Size = new System.Drawing.Size(616, 22);
@@ -471,6 +475,18 @@
             // 
             this.ExperimentalSeparator1.Name = "ExperimentalSeparator1";
             this.ExperimentalSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
+            // SaveSlotLabel
+            // 
+            this.SaveSlotLabel.Name = "SaveSlotLabel";
+            this.SaveSlotLabel.Size = new System.Drawing.Size(63, 17);
+            this.SaveSlotLabel.Text = "Save Slot 1";
+            // 
+            // RegionLabel
+            // 
+            this.RegionLabel.Name = "RegionLabel";
+            this.RegionLabel.Size = new System.Drawing.Size(100, 17);
+            this.RegionLabel.Text = "No SRAM Loaded";
             // 
             // MainWindow
             // 
@@ -550,6 +566,8 @@
         private System.Windows.Forms.ToolStripSeparator SaveSlotSeparator2;
         private System.Windows.Forms.ToolStripSeparator SaveSlotSeparator3;
         private System.Windows.Forms.ToolStripSeparator ExperimentalSeparator1;
+        private System.Windows.Forms.ToolStripStatusLabel SaveSlotLabel;
+        private System.Windows.Forms.ToolStripStatusLabel RegionLabel;
     }
 }
 

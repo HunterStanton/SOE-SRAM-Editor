@@ -67,6 +67,7 @@ namespace SOE_SRAM_Editor
         private void SaveSlot1MenuItem_Click(object sender, EventArgs e)
         {
             // Do nothing right now.
+            SaveSlotLabel.Text = "Save Slot 1";
             return;
         }
 
@@ -79,6 +80,7 @@ namespace SOE_SRAM_Editor
         private void SaveSlot2MenuItem_Click(object sender, EventArgs e)
         {
             // Do nothing right now.
+            SaveSlotLabel.Text = "Save Slot 2";
             return;
         }
 
@@ -91,6 +93,7 @@ namespace SOE_SRAM_Editor
         private void SaveSlot3MenuItem_Click(object sender, EventArgs e)
         {
             // Do nothing right now.
+            SaveSlotLabel.Text = "Save Slot 3";
             return;
         }
 
@@ -103,6 +106,7 @@ namespace SOE_SRAM_Editor
         private void SaveSlot4MenuItem_Click(object sender, EventArgs e)
         {
             // Do nothing right now.
+            SaveSlotLabel.Text = "Save Slot 4";
             return;
         }
         #endregion
