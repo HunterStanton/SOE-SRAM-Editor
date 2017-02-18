@@ -34,13 +34,13 @@
             this.EquipmentTab = new System.Windows.Forms.TabPage();
             this.AlchemyTab = new System.Windows.Forms.TabPage();
             this.InventoryTab = new System.Windows.Forms.TabPage();
-            this.Pouch = new System.Windows.Forms.TabPage();
+            this.TradingItems = new System.Windows.Forms.TabPage();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenFileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Separator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.FileSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.SaveFileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Separator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.FileSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ExitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveSlotMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveSlot1MenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,15 +68,19 @@
             this.experimentalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DisableLimitsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EnableLimitsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.LimitsLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.SaveSlotSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.SaveSlotSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.SaveSlotSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.ExperimentalSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.SaveTab.SuspendLayout();
             this.StatsTab.SuspendLayout();
             this.EquipmentTab.SuspendLayout();
             this.MenuStrip.SuspendLayout();
             this.NamesGroup.SuspendLayout();
             this.MoneyGroup.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.StatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // SaveTab
@@ -85,7 +89,7 @@
             this.SaveTab.Controls.Add(this.EquipmentTab);
             this.SaveTab.Controls.Add(this.AlchemyTab);
             this.SaveTab.Controls.Add(this.InventoryTab);
-            this.SaveTab.Controls.Add(this.Pouch);
+            this.SaveTab.Controls.Add(this.TradingItems);
             this.SaveTab.Location = new System.Drawing.Point(12, 27);
             this.SaveTab.Name = "SaveTab";
             this.SaveTab.SelectedIndex = 0;
@@ -112,7 +116,7 @@
             this.EquipmentTab.Location = new System.Drawing.Point(4, 22);
             this.EquipmentTab.Name = "EquipmentTab";
             this.EquipmentTab.Padding = new System.Windows.Forms.Padding(3);
-            this.EquipmentTab.Size = new System.Drawing.Size(584, 305);
+            this.EquipmentTab.Size = new System.Drawing.Size(584, 339);
             this.EquipmentTab.TabIndex = 1;
             this.EquipmentTab.Text = "Equipment";
             this.EquipmentTab.UseVisualStyleBackColor = true;
@@ -121,7 +125,7 @@
             // 
             this.AlchemyTab.Location = new System.Drawing.Point(4, 22);
             this.AlchemyTab.Name = "AlchemyTab";
-            this.AlchemyTab.Size = new System.Drawing.Size(584, 305);
+            this.AlchemyTab.Size = new System.Drawing.Size(584, 339);
             this.AlchemyTab.TabIndex = 2;
             this.AlchemyTab.Text = "Alchemy";
             this.AlchemyTab.UseVisualStyleBackColor = true;
@@ -130,19 +134,19 @@
             // 
             this.InventoryTab.Location = new System.Drawing.Point(4, 22);
             this.InventoryTab.Name = "InventoryTab";
-            this.InventoryTab.Size = new System.Drawing.Size(584, 305);
+            this.InventoryTab.Size = new System.Drawing.Size(584, 339);
             this.InventoryTab.TabIndex = 3;
             this.InventoryTab.Text = "Inventory";
             this.InventoryTab.UseVisualStyleBackColor = true;
             // 
-            // Pouch
+            // TradingItems
             // 
-            this.Pouch.Location = new System.Drawing.Point(4, 22);
-            this.Pouch.Name = "Pouch";
-            this.Pouch.Size = new System.Drawing.Size(584, 305);
-            this.Pouch.TabIndex = 4;
-            this.Pouch.Text = "Trading Items";
-            this.Pouch.UseVisualStyleBackColor = true;
+            this.TradingItems.Location = new System.Drawing.Point(4, 22);
+            this.TradingItems.Name = "TradingItems";
+            this.TradingItems.Size = new System.Drawing.Size(584, 339);
+            this.TradingItems.TabIndex = 4;
+            this.TradingItems.Text = "Trading Items";
+            this.TradingItems.UseVisualStyleBackColor = true;
             // 
             // MenuStrip
             // 
@@ -161,9 +165,9 @@
             // 
             this.FileMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.OpenFileMenuItem,
-            this.Separator1,
+            this.FileSeparator1,
             this.SaveFileMenuItem,
-            this.Separator2,
+            this.FileSeparator2,
             this.ExitMenuItem});
             this.FileMenu.Name = "FileMenu";
             this.FileMenu.Size = new System.Drawing.Size(37, 20);
@@ -176,10 +180,10 @@
             this.OpenFileMenuItem.Text = "Open";
             this.OpenFileMenuItem.Click += new System.EventHandler(this.OpenFileMenuItem_Click);
             // 
-            // Separator1
+            // FileSeparator1
             // 
-            this.Separator1.Name = "Separator1";
-            this.Separator1.Size = new System.Drawing.Size(149, 6);
+            this.FileSeparator1.Name = "FileSeparator1";
+            this.FileSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // SaveFileMenuItem
             // 
@@ -188,10 +192,10 @@
             this.SaveFileMenuItem.Text = "Save";
             this.SaveFileMenuItem.Click += new System.EventHandler(this.SaveFileMenuItem_Click);
             // 
-            // Separator2
+            // FileSeparator2
             // 
-            this.Separator2.Name = "Separator2";
-            this.Separator2.Size = new System.Drawing.Size(149, 6);
+            this.FileSeparator2.Name = "FileSeparator2";
+            this.FileSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // ExitMenuItem
             // 
@@ -204,8 +208,11 @@
             // 
             this.SaveSlotMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SaveSlot1MenuItem,
+            this.SaveSlotSeparator1,
             this.SaveSlot2MenuItem,
+            this.SaveSlotSeparator2,
             this.SaveSlot3MenuItem,
+            this.SaveSlotSeparator3,
             this.SaveSlot4MenuItem});
             this.SaveSlotMenu.Name = "SaveSlotMenu";
             this.SaveSlotMenu.Size = new System.Drawing.Size(66, 20);
@@ -410,6 +417,7 @@
             // 
             this.experimentalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.DisableLimitsMenuItem,
+            this.ExperimentalSeparator1,
             this.EnableLimitsMenuItem});
             this.experimentalToolStripMenuItem.Name = "experimentalToolStripMenuItem";
             this.experimentalToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
@@ -429,15 +437,14 @@
             this.EnableLimitsMenuItem.Text = "Enable Limits";
             this.EnableLimitsMenuItem.Click += new System.EventHandler(this.EnableLimitsMenuItem_Click);
             // 
-            // statusStrip1
+            // StatusStrip
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LimitsLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 400);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(616, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
+            this.StatusStrip.Location = new System.Drawing.Point(0, 400);
+            this.StatusStrip.Name = "StatusStrip";
+            this.StatusStrip.Size = new System.Drawing.Size(616, 22);
+            this.StatusStrip.TabIndex = 2;
             // 
             // LimitsLabel
             // 
@@ -445,16 +452,38 @@
             this.LimitsLabel.Size = new System.Drawing.Size(84, 17);
             this.LimitsLabel.Text = "Limits Enabled";
             // 
+            // SaveSlotSeparator1
+            // 
+            this.SaveSlotSeparator1.Name = "SaveSlotSeparator1";
+            this.SaveSlotSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
+            // SaveSlotSeparator2
+            // 
+            this.SaveSlotSeparator2.Name = "SaveSlotSeparator2";
+            this.SaveSlotSeparator2.Size = new System.Drawing.Size(149, 6);
+            // 
+            // SaveSlotSeparator3
+            // 
+            this.SaveSlotSeparator3.Name = "SaveSlotSeparator3";
+            this.SaveSlotSeparator3.Size = new System.Drawing.Size(149, 6);
+            // 
+            // ExperimentalSeparator1
+            // 
+            this.ExperimentalSeparator1.Name = "ExperimentalSeparator1";
+            this.ExperimentalSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 422);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.SaveTab);
             this.Controls.Add(this.MenuStrip);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.MenuStrip;
+            this.MaximizeBox = false;
             this.Name = "MainWindow";
             this.Text = "Secret of Evermore SRAM Editor - No SRAM Loaded";
             this.SaveTab.ResumeLayout(false);
@@ -467,8 +496,8 @@
             this.NamesGroup.PerformLayout();
             this.MoneyGroup.ResumeLayout(false);
             this.MoneyGroup.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.StatusStrip.ResumeLayout(false);
+            this.StatusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -481,13 +510,13 @@
         private System.Windows.Forms.TabPage EquipmentTab;
         private System.Windows.Forms.TabPage AlchemyTab;
         private System.Windows.Forms.TabPage InventoryTab;
-        private System.Windows.Forms.TabPage Pouch;
+        private System.Windows.Forms.TabPage TradingItems;
         private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStripMenuItem FileMenu;
         private System.Windows.Forms.ToolStripMenuItem OpenFileMenuItem;
-        private System.Windows.Forms.ToolStripSeparator Separator1;
+        private System.Windows.Forms.ToolStripSeparator FileSeparator1;
         private System.Windows.Forms.ToolStripMenuItem SaveFileMenuItem;
-        private System.Windows.Forms.ToolStripSeparator Separator2;
+        private System.Windows.Forms.ToolStripSeparator FileSeparator2;
         private System.Windows.Forms.ToolStripMenuItem ExitMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SaveSlotMenu;
         private System.Windows.Forms.ToolStripMenuItem SaveSlot1MenuItem;
@@ -515,8 +544,12 @@
         private System.Windows.Forms.ToolStripMenuItem experimentalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DisableLimitsMenuItem;
         private System.Windows.Forms.ToolStripMenuItem EnableLimitsMenuItem;
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.StatusStrip StatusStrip;
         private System.Windows.Forms.ToolStripStatusLabel LimitsLabel;
+        private System.Windows.Forms.ToolStripSeparator SaveSlotSeparator1;
+        private System.Windows.Forms.ToolStripSeparator SaveSlotSeparator2;
+        private System.Windows.Forms.ToolStripSeparator SaveSlotSeparator3;
+        private System.Windows.Forms.ToolStripSeparator ExperimentalSeparator1;
     }
 }
 
