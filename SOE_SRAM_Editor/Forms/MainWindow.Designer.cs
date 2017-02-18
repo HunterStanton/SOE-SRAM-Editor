@@ -59,10 +59,10 @@
             this.DogStatsBox = new System.Windows.Forms.GroupBox();
             this.TalonsTextBox = new System.Windows.Forms.TextBox();
             this.JewelsTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.TalonsLabel = new System.Windows.Forms.Label();
+            this.JewelsLabel = new System.Windows.Forms.Label();
+            this.CreditsLabel = new System.Windows.Forms.Label();
+            this.CoinsLabel = new System.Windows.Forms.Label();
             this.CreditsTextBox = new System.Windows.Forms.TextBox();
             this.CoinsTextBox = new System.Windows.Forms.TextBox();
             this.SaveTab.SuspendLayout();
@@ -300,10 +300,10 @@
             // 
             this.MoneyGroup.Controls.Add(this.CreditsTextBox);
             this.MoneyGroup.Controls.Add(this.CoinsTextBox);
-            this.MoneyGroup.Controls.Add(this.label3);
-            this.MoneyGroup.Controls.Add(this.label4);
-            this.MoneyGroup.Controls.Add(this.label2);
-            this.MoneyGroup.Controls.Add(this.label1);
+            this.MoneyGroup.Controls.Add(this.CreditsLabel);
+            this.MoneyGroup.Controls.Add(this.CoinsLabel);
+            this.MoneyGroup.Controls.Add(this.JewelsLabel);
+            this.MoneyGroup.Controls.Add(this.TalonsLabel);
             this.MoneyGroup.Controls.Add(this.JewelsTextBox);
             this.MoneyGroup.Controls.Add(this.TalonsTextBox);
             this.MoneyGroup.Location = new System.Drawing.Point(6, 87);
@@ -347,41 +347,41 @@
             this.JewelsTextBox.TabIndex = 1;
             this.JewelsTextBox.Text = "0";
             // 
-            // label1
+            // TalonsLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(238, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Talons";
+            this.TalonsLabel.AutoSize = true;
+            this.TalonsLabel.Location = new System.Drawing.Point(238, 23);
+            this.TalonsLabel.Name = "TalonsLabel";
+            this.TalonsLabel.Size = new System.Drawing.Size(39, 13);
+            this.TalonsLabel.TabIndex = 2;
+            this.TalonsLabel.Text = "Talons";
             // 
-            // label2
+            // JewelsLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(238, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Jewels";
+            this.JewelsLabel.AutoSize = true;
+            this.JewelsLabel.Location = new System.Drawing.Point(238, 49);
+            this.JewelsLabel.Name = "JewelsLabel";
+            this.JewelsLabel.Size = new System.Drawing.Size(39, 13);
+            this.JewelsLabel.TabIndex = 3;
+            this.JewelsLabel.Text = "Jewels";
             // 
-            // label3
+            // CreditsLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(533, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Credits";
+            this.CreditsLabel.AutoSize = true;
+            this.CreditsLabel.Location = new System.Drawing.Point(533, 49);
+            this.CreditsLabel.Name = "CreditsLabel";
+            this.CreditsLabel.Size = new System.Drawing.Size(39, 13);
+            this.CreditsLabel.TabIndex = 5;
+            this.CreditsLabel.Text = "Credits";
             // 
-            // label4
+            // CoinsLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(533, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Coins";
+            this.CoinsLabel.AutoSize = true;
+            this.CoinsLabel.Location = new System.Drawing.Point(533, 22);
+            this.CoinsLabel.Name = "CoinsLabel";
+            this.CoinsLabel.Size = new System.Drawing.Size(33, 13);
+            this.CoinsLabel.TabIndex = 4;
+            this.CoinsLabel.Text = "Coins";
             // 
             // CreditsTextBox
             // 
@@ -457,10 +457,10 @@
         private System.Windows.Forms.GroupBox BoyStatsBox;
         private System.Windows.Forms.TextBox CreditsTextBox;
         private System.Windows.Forms.TextBox CoinsTextBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label CreditsLabel;
+        private System.Windows.Forms.Label CoinsLabel;
+        private System.Windows.Forms.Label JewelsLabel;
+        private System.Windows.Forms.Label TalonsLabel;
         private System.Windows.Forms.TextBox JewelsTextBox;
         private System.Windows.Forms.TextBox TalonsTextBox;
     }
