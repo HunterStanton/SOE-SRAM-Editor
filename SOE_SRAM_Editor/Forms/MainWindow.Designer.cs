@@ -32,6 +32,8 @@
             this.StatsTab = new System.Windows.Forms.TabPage();
             this.EquipmentTab = new System.Windows.Forms.TabPage();
             this.AlchemyTab = new System.Windows.Forms.TabPage();
+            this.InventoryTab = new System.Windows.Forms.TabPage();
+            this.Pouch = new System.Windows.Forms.TabPage();
             this.SaveTab.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,6 +42,8 @@
             this.SaveTab.Controls.Add(this.StatsTab);
             this.SaveTab.Controls.Add(this.EquipmentTab);
             this.SaveTab.Controls.Add(this.AlchemyTab);
+            this.SaveTab.Controls.Add(this.InventoryTab);
+            this.SaveTab.Controls.Add(this.Pouch);
             this.SaveTab.Location = new System.Drawing.Point(12, 12);
             this.SaveTab.Name = "SaveTab";
             this.SaveTab.SelectedIndex = 0;
@@ -75,6 +79,24 @@
             this.AlchemyTab.Text = "Alchemy";
             this.AlchemyTab.UseVisualStyleBackColor = true;
             // 
+            // InventoryTab
+            // 
+            this.InventoryTab.Location = new System.Drawing.Point(4, 22);
+            this.InventoryTab.Name = "InventoryTab";
+            this.InventoryTab.Size = new System.Drawing.Size(584, 314);
+            this.InventoryTab.TabIndex = 3;
+            this.InventoryTab.Text = "Inventory";
+            this.InventoryTab.UseVisualStyleBackColor = true;
+            // 
+            // Pouch
+            // 
+            this.Pouch.Location = new System.Drawing.Point(4, 22);
+            this.Pouch.Name = "Pouch";
+            this.Pouch.Size = new System.Drawing.Size(584, 314);
+            this.Pouch.TabIndex = 4;
+            this.Pouch.Text = "Trading Items";
+            this.Pouch.UseVisualStyleBackColor = true;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,6 +116,8 @@
         private System.Windows.Forms.TabPage StatsTab;
         private System.Windows.Forms.TabPage EquipmentTab;
         private System.Windows.Forms.TabPage AlchemyTab;
+        private System.Windows.Forms.TabPage InventoryTab;
+        private System.Windows.Forms.TabPage Pouch;
     }
 }
 
