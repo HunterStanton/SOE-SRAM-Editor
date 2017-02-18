@@ -180,24 +180,28 @@
             this.SaveSlot1MenuItem.Name = "SaveSlot1MenuItem";
             this.SaveSlot1MenuItem.Size = new System.Drawing.Size(152, 22);
             this.SaveSlot1MenuItem.Text = "Save Slot 1";
+            this.SaveSlot1MenuItem.Click += new System.EventHandler(this.SaveSlot1MenuItem_Click);
             // 
             // SaveSlot2MenuItem
             // 
             this.SaveSlot2MenuItem.Name = "SaveSlot2MenuItem";
             this.SaveSlot2MenuItem.Size = new System.Drawing.Size(152, 22);
             this.SaveSlot2MenuItem.Text = "Save Slot 2";
+            this.SaveSlot2MenuItem.Click += new System.EventHandler(this.SaveSlot2MenuItem_Click);
             // 
             // SaveSlot3MenuItem
             // 
             this.SaveSlot3MenuItem.Name = "SaveSlot3MenuItem";
             this.SaveSlot3MenuItem.Size = new System.Drawing.Size(152, 22);
             this.SaveSlot3MenuItem.Text = "Save Slot 3";
+            this.SaveSlot3MenuItem.Click += new System.EventHandler(this.SaveSlot3MenuItem_Click);
             // 
             // SaveSlot4MenuItem
             // 
             this.SaveSlot4MenuItem.Name = "SaveSlot4MenuItem";
             this.SaveSlot4MenuItem.Size = new System.Drawing.Size(152, 22);
             this.SaveSlot4MenuItem.Text = "Save Slot 4";
+            this.SaveSlot4MenuItem.Click += new System.EventHandler(this.SaveSlot4MenuItem_Click);
             // 
             // MainWindow
             // 

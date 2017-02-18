@@ -41,9 +41,65 @@ namespace SOE_SRAM_Editor
             return;
         }
 
+        /// <summary>
+        ///  Used when the user selects the Open option in the File menu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OpenFileMenuItem_Click(object sender, EventArgs e)
         {
             // Do nothing right now
+            return;
+        }
+
+        #endregion
+
+        #region Save Slot Menu stuff
+        /// <summary>
+        ///  Used when the user selects the Save Slot 1 option in the Save Slot menu.
+        ///  Switches to save slot #1.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SaveSlot1MenuItem_Click(object sender, EventArgs e)
+        {
+            // Do nothing right now.
+            return;
+        }
+
+        /// <summary>
+        ///  Used when the user selects the Save Slot 2 option in the Save Slot menu.
+        ///  Switches to save slot #2.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SaveSlot2MenuItem_Click(object sender, EventArgs e)
+        {
+            // Do nothing right now.
+            return;
+        }
+
+        /// <summary>
+        ///  Used when the user selects the Save Slot 3 option in the Save Slot menu.
+        ///  Switches to save slot #3.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SaveSlot3MenuItem_Click(object sender, EventArgs e)
+        {
+            // Do nothing right now.
+            return;
+        }
+
+        /// <summary>
+        ///  Used when the user selects the Save Slot 4 option in the Save Slot menu.
+        ///  Switches to save slot #4.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SaveSlot4MenuItem_Click(object sender, EventArgs e)
+        {
+            // Do nothing right now.
             return;
         }
         #endregion
