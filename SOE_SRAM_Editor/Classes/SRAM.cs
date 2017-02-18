@@ -271,5 +271,114 @@ namespace SOE_SRAM_Editor
             public int Tapestry;
             public int TicketForExhibition;
         }
+
+        /// <summary>
+        /// Alchemy formulas and their level.
+        /// </summary>
+        public class Alchemy
+        {
+            public bool HasAcidRain;
+            public int AcidRainLevel;
+            public int AcidRainXP;
+            public bool HasAtlas;
+            public int AtlasLevel;
+            public int AtlasXP;
+            public bool HasBarrier;
+            public int BarrierLevel;
+            public int BarrierXP;
+            public bool HasCallUp;
+            public int CallUpLevel;
+            public int CallUpXP;
+            public bool HasCorrosion;
+            public int CorrosionLevel;
+            public int CorrosionXP;
+            public bool HasCrush;
+            public int CrushLevel;
+            public int CrushXP;
+            public bool HasCure;
+            public int CureLevel;
+            public int CureXP;
+            public bool HasDefend;
+            public int DefendLevel;
+            public int DefendXP;
+            public bool HasDoubleDrain;
+            public int DoubleDrainLevel;
+            public int DoubleDrainXP;
+            public bool HasDrain;
+            public int DrainLevel;
+            public int DrainXP;
+            public bool HasEnergize;
+            public int EnergizeLevel;
+            public int EnergizeXP;
+            public bool HasEscape;
+            public int EscapeLevel;
+            public int EscapeXP;
+            public bool HasExplosion;
+            public int ExplosionLevel;
+            public int ExplosionXP;
+            public bool HasFireball;
+            public int FireballLevel;
+            public int FireballXP;
+            public bool HasFirePower;
+            public int FirePowerLevel;
+            public int FirePowerXP;
+            public bool HasFlash;
+            public int FlashLevel;
+            public int FlashXP;
+            public bool HasForceField;
+            public int ForceFieldLevel;
+            public int ForceFieldXP;
+            public bool HasHardBall;
+            public int HardBallLevel;
+            public int HardBallXP;
+            public bool HasHeal;
+            public int HealLevel;
+            public int HealXP;
+            public bool HasLance;
+            public int LanceLevel;
+            public int LanceXP;
+            public bool HasLevitate;
+            public int LevitateLevel;
+            public int LevitateXP;
+            public bool HasLightningStorm;
+            public int LightningStormLevel;
+            public int LightningStormXP;
+            public bool HasMiracleCure;
+            public int MiracleCureLevel;
+            public int MiracleCureXP;
+            public bool HasNitro;
+            public int NitroLevel;
+            public int NitroXP;
+            public bool HasOneUp;
+            public int OneUpLevel;
+            public int OneUpXP;
+            public bool HasReflect;
+            public int ReflectLevel;
+            public int ReflectXP;
+            public bool HasRegrowth;
+            public int RegrowthLevel;
+            public int RegrowthXP;
+            public bool HasRevealer;
+            public int RevealerLevel;
+            public int RevealerXP;
+            public bool HasRevive;
+            public int ReviveLevel;
+            public int ReviveXP;
+            public bool HasSlowBurn;
+            public int SlowBurnLevel;
+            public int SlowBurnXP;
+            public bool HasSpeed;
+            public int SpeedLevel;
+            public int SpeedXP;
+            public bool HasSting;
+            public int StingLevel;
+            public int StingXP;
+            public bool HasStop;
+            public int StopLevel;
+            public int StopXP;
+            public bool HasSuperHeal;
+            public int SuperHealLevel;
+            public int SuperHealXP;
+        }
     }
 }
