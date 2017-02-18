@@ -48,7 +48,12 @@
             this.SaveSlot3MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveSlot4MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.BoyNameTextBox = new System.Windows.Forms.TextBox();
+            this.DogNameTextBox = new System.Windows.Forms.TextBox();
+            this.BoyNameLabel = new System.Windows.Forms.Label();
+            this.DogNameLabel = new System.Windows.Forms.Label();
             this.SaveTab.SuspendLayout();
+            this.StatsTab.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +72,10 @@
             // 
             // StatsTab
             // 
+            this.StatsTab.Controls.Add(this.DogNameLabel);
+            this.StatsTab.Controls.Add(this.BoyNameLabel);
+            this.StatsTab.Controls.Add(this.DogNameTextBox);
+            this.StatsTab.Controls.Add(this.BoyNameTextBox);
             this.StatsTab.Location = new System.Drawing.Point(4, 22);
             this.StatsTab.Name = "StatsTab";
             this.StatsTab.Padding = new System.Windows.Forms.Padding(3);
@@ -213,6 +222,40 @@
             this.AboutMenu.Text = "About";
             this.AboutMenu.Click += new System.EventHandler(this.AboutMenu_Click);
             // 
+            // BoyNameTextBox
+            // 
+            this.BoyNameTextBox.Location = new System.Drawing.Point(6, 6);
+            this.BoyNameTextBox.Name = "BoyNameTextBox";
+            this.BoyNameTextBox.Size = new System.Drawing.Size(185, 20);
+            this.BoyNameTextBox.TabIndex = 0;
+            this.BoyNameTextBox.Text = "Boy";
+            // 
+            // DogNameTextBox
+            // 
+            this.DogNameTextBox.Location = new System.Drawing.Point(6, 32);
+            this.DogNameTextBox.Name = "DogNameTextBox";
+            this.DogNameTextBox.Size = new System.Drawing.Size(185, 20);
+            this.DogNameTextBox.TabIndex = 1;
+            this.DogNameTextBox.Text = "Dog";
+            // 
+            // BoyNameLabel
+            // 
+            this.BoyNameLabel.AutoSize = true;
+            this.BoyNameLabel.Location = new System.Drawing.Point(198, 7);
+            this.BoyNameLabel.Name = "BoyNameLabel";
+            this.BoyNameLabel.Size = new System.Drawing.Size(56, 13);
+            this.BoyNameLabel.TabIndex = 2;
+            this.BoyNameLabel.Text = "Boy Name";
+            // 
+            // DogNameLabel
+            // 
+            this.DogNameLabel.AutoSize = true;
+            this.DogNameLabel.Location = new System.Drawing.Point(198, 35);
+            this.DogNameLabel.Name = "DogNameLabel";
+            this.DogNameLabel.Size = new System.Drawing.Size(58, 13);
+            this.DogNameLabel.TabIndex = 3;
+            this.DogNameLabel.Text = "Dog Name";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,6 +268,8 @@
             this.Name = "MainWindow";
             this.Text = "Secret of Evermore SRAM Editor - No ROM Loaded";
             this.SaveTab.ResumeLayout(false);
+            this.StatsTab.ResumeLayout(false);
+            this.StatsTab.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -253,6 +298,10 @@
         private System.Windows.Forms.ToolStripMenuItem SaveSlot3MenuItem;
         private System.Windows.Forms.ToolStripMenuItem SaveSlot4MenuItem;
         private System.Windows.Forms.ToolStripMenuItem AboutMenu;
+        private System.Windows.Forms.Label DogNameLabel;
+        private System.Windows.Forms.Label BoyNameLabel;
+        private System.Windows.Forms.TextBox DogNameTextBox;
+        private System.Windows.Forms.TextBox BoyNameTextBox;
     }
 }
 
