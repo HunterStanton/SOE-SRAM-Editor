@@ -39,7 +39,7 @@ namespace SOE_SRAM_Editor
             public string Name;
             public int Level;
             public int Experience;
-            public int HP; // HP at the time of the save
+            public int HP; // HP at the time of the save. Max 999
         }
 
         /// <summary>
@@ -50,7 +50,7 @@ namespace SOE_SRAM_Editor
             public string Name;
             public int Level;
             public int Experience;
-            public int HP; // HP at the time of the save
+            public int HP; // HP at the time of the save. Max 999
 
             // Only Dog has this because Dog doesn't have switchable weapons
             public int AttackLevel;
@@ -58,7 +58,7 @@ namespace SOE_SRAM_Editor
         }
 
         /// <summary>
-        /// The types of money that are possible to receive
+        /// The types of money that are possible to receive. Max 99,999,999
         /// </summary>
         public class Money
         {
@@ -116,7 +116,7 @@ namespace SOE_SRAM_Editor
         }
 
         /// <summary>
-        /// Alchemy ingredients
+        /// Alchemy ingredients. Max 99 normally, but can be forced higher
         /// </summary>
         public class Ingredients
         {
@@ -160,7 +160,7 @@ namespace SOE_SRAM_Editor
         }
 
         /// <summary>
-        /// Chest piece items that boost defense.
+        /// Chest piece items that boost defense. Max 6 normally, but can be forced higher.
         /// </summary>
         public class Armor
         {
@@ -179,7 +179,7 @@ namespace SOE_SRAM_Editor
         }
 
         /// <summary>
-        /// Helmet piece items that boost defense.
+        /// Helmet piece items that boost defense. Max 6 normally, but can be forced higher.
         /// </summary>
         public class Helmet
         {
@@ -195,6 +195,25 @@ namespace SOE_SRAM_Editor
             public int LightningHelm;
             public int OldReliable;
             public int Brainstorm;
+        }
+
+        /// <summary>
+        /// Gauntlet piece items that boost defense. Max 6 normally, but can be forced higher.
+        /// </summary>
+        public class Gauntlet
+        {
+
+        }
+
+        /// <summary>
+        /// Collars that dog can wear that boost dog's defense. Max 6 normally, but can be forced higher.
+        /// </summary>
+        public class Collar
+        {
+            public int LeatherCollar;
+            public int SpikyCollar;
+            public int DefenderCollar;
+            public int SpotsCollar;
         }
     }
 }
