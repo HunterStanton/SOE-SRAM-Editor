@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace SOE_SRAM_Editor
 {
+    /// <summary>
+    /// The main window of the application.
+    /// </summary>
     public partial class MainWindow : Form
     {
         public MainWindow()
@@ -113,6 +116,29 @@ namespace SOE_SRAM_Editor
         private void AboutMenu_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Secret of Evermore SRAM Editor v0.0 Alpha\nCopyright 2017 Hunter Stanton", "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        #endregion
+
+        #region Experimental Menu stuff.
+        /// <summary>
+        /// Used when the user clicks on the Enable Limits menu option.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void EnableLimitsMenuItem_Click(object sender, EventArgs e)
+        {
+            LimitsLabel.Text = "Limits Enabled";
+        }
+
+        /// <summary>
+        ///  Used when the user clicks on the Disable Limits menu option.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DisableLimitsMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Limits (such as alchemy ingredient limits) are disabled where applicable.\nYou MAY experience bugs in-game when going above the limits.\nWould not advise using this on a save you care about!", "Important Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            LimitsLabel.Text = "Limits Disabled";
         }
         #endregion
     }

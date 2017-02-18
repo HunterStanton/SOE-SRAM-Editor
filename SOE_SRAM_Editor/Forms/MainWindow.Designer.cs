@@ -65,12 +65,18 @@
             this.CoinsLabel = new System.Windows.Forms.Label();
             this.CreditsTextBox = new System.Windows.Forms.TextBox();
             this.CoinsTextBox = new System.Windows.Forms.TextBox();
+            this.experimentalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DisableLimitsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EnableLimitsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.LimitsLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.SaveTab.SuspendLayout();
             this.StatsTab.SuspendLayout();
             this.EquipmentTab.SuspendLayout();
             this.MenuStrip.SuspendLayout();
             this.NamesGroup.SuspendLayout();
             this.MoneyGroup.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // SaveTab
@@ -143,7 +149,8 @@
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileMenu,
             this.SaveSlotMenu,
-            this.AboutMenu});
+            this.AboutMenu,
+            this.experimentalToolStripMenuItem});
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
             this.MenuStrip.Size = new System.Drawing.Size(616, 24);
@@ -399,17 +406,57 @@
             this.CoinsTextBox.TabIndex = 6;
             this.CoinsTextBox.Text = "0";
             // 
+            // experimentalToolStripMenuItem
+            // 
+            this.experimentalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.DisableLimitsMenuItem,
+            this.EnableLimitsMenuItem});
+            this.experimentalToolStripMenuItem.Name = "experimentalToolStripMenuItem";
+            this.experimentalToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.experimentalToolStripMenuItem.Text = "Experimental";
+            // 
+            // DisableLimitsMenuItem
+            // 
+            this.DisableLimitsMenuItem.Name = "DisableLimitsMenuItem";
+            this.DisableLimitsMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.DisableLimitsMenuItem.Text = "Disable Limits";
+            this.DisableLimitsMenuItem.Click += new System.EventHandler(this.DisableLimitsMenuItem_Click);
+            // 
+            // EnableLimitsMenuItem
+            // 
+            this.EnableLimitsMenuItem.Name = "EnableLimitsMenuItem";
+            this.EnableLimitsMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.EnableLimitsMenuItem.Text = "Enable Limits";
+            this.EnableLimitsMenuItem.Click += new System.EventHandler(this.EnableLimitsMenuItem_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LimitsLabel});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 400);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(616, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // LimitsLabel
+            // 
+            this.LimitsLabel.Name = "LimitsLabel";
+            this.LimitsLabel.Size = new System.Drawing.Size(84, 17);
+            this.LimitsLabel.Text = "Limits Enabled";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 404);
+            this.ClientSize = new System.Drawing.Size(616, 422);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.SaveTab);
             this.Controls.Add(this.MenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.MenuStrip;
             this.Name = "MainWindow";
-            this.Text = "Secret of Evermore SRAM Editor - No ROM Loaded";
+            this.Text = "Secret of Evermore SRAM Editor - No SRAM Loaded";
             this.SaveTab.ResumeLayout(false);
             this.StatsTab.ResumeLayout(false);
             this.EquipmentTab.ResumeLayout(false);
@@ -420,6 +467,8 @@
             this.NamesGroup.PerformLayout();
             this.MoneyGroup.ResumeLayout(false);
             this.MoneyGroup.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,6 +512,11 @@
         private System.Windows.Forms.Label TalonsLabel;
         private System.Windows.Forms.TextBox JewelsTextBox;
         private System.Windows.Forms.TextBox TalonsTextBox;
+        private System.Windows.Forms.ToolStripMenuItem experimentalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DisableLimitsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EnableLimitsMenuItem;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel LimitsLabel;
     }
 }
 
