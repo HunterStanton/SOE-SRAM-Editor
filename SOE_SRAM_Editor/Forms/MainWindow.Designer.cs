@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.SaveTab = new System.Windows.Forms.TabControl();
             this.StatsTab = new System.Windows.Forms.TabPage();
             this.EquipmentTab = new System.Windows.Forms.TabPage();
@@ -219,6 +220,7 @@
             this.ClientSize = new System.Drawing.Size(616, 364);
             this.Controls.Add(this.SaveTab);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainWindow";
             this.Text = "Secret of Evermore SRAM Editor - No ROM Loaded";

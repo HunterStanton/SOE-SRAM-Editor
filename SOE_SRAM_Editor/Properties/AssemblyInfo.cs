@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Secret of Evermore SRAM Editor")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("An SRAM editor for the Super Nintendo Entertainment System game Secret of Evermore.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Hunter Stanton")]
 [assembly: AssemblyProduct("Secret of Evermore SRAM Editor")]
 [assembly: AssemblyCopyright("Copyright © Hunter Stanton 2017")]
 [assembly: AssemblyTrademark("")]
