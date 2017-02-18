@@ -52,8 +52,10 @@
             this.DogNameTextBox = new System.Windows.Forms.TextBox();
             this.BoyNameLabel = new System.Windows.Forms.Label();
             this.DogNameLabel = new System.Windows.Forms.Label();
+            this.BoneCheckBox = new System.Windows.Forms.CheckBox();
             this.SaveTab.SuspendLayout();
             this.StatsTab.SuspendLayout();
+            this.EquipmentTab.SuspendLayout();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +69,7 @@
             this.SaveTab.Location = new System.Drawing.Point(12, 27);
             this.SaveTab.Name = "SaveTab";
             this.SaveTab.SelectedIndex = 0;
-            this.SaveTab.Size = new System.Drawing.Size(592, 325);
+            this.SaveTab.Size = new System.Drawing.Size(592, 331);
             this.SaveTab.TabIndex = 0;
             // 
             // StatsTab
@@ -79,17 +81,18 @@
             this.StatsTab.Location = new System.Drawing.Point(4, 22);
             this.StatsTab.Name = "StatsTab";
             this.StatsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.StatsTab.Size = new System.Drawing.Size(584, 299);
+            this.StatsTab.Size = new System.Drawing.Size(584, 305);
             this.StatsTab.TabIndex = 0;
             this.StatsTab.Text = "Stats";
             this.StatsTab.UseVisualStyleBackColor = true;
             // 
             // EquipmentTab
             // 
+            this.EquipmentTab.Controls.Add(this.BoneCheckBox);
             this.EquipmentTab.Location = new System.Drawing.Point(4, 22);
             this.EquipmentTab.Name = "EquipmentTab";
             this.EquipmentTab.Padding = new System.Windows.Forms.Padding(3);
-            this.EquipmentTab.Size = new System.Drawing.Size(584, 299);
+            this.EquipmentTab.Size = new System.Drawing.Size(584, 305);
             this.EquipmentTab.TabIndex = 1;
             this.EquipmentTab.Text = "Equipment";
             this.EquipmentTab.UseVisualStyleBackColor = true;
@@ -98,7 +101,7 @@
             // 
             this.AlchemyTab.Location = new System.Drawing.Point(4, 22);
             this.AlchemyTab.Name = "AlchemyTab";
-            this.AlchemyTab.Size = new System.Drawing.Size(584, 299);
+            this.AlchemyTab.Size = new System.Drawing.Size(584, 305);
             this.AlchemyTab.TabIndex = 2;
             this.AlchemyTab.Text = "Alchemy";
             this.AlchemyTab.UseVisualStyleBackColor = true;
@@ -107,7 +110,7 @@
             // 
             this.InventoryTab.Location = new System.Drawing.Point(4, 22);
             this.InventoryTab.Name = "InventoryTab";
-            this.InventoryTab.Size = new System.Drawing.Size(584, 299);
+            this.InventoryTab.Size = new System.Drawing.Size(584, 305);
             this.InventoryTab.TabIndex = 3;
             this.InventoryTab.Text = "Inventory";
             this.InventoryTab.UseVisualStyleBackColor = true;
@@ -116,7 +119,7 @@
             // 
             this.Pouch.Location = new System.Drawing.Point(4, 22);
             this.Pouch.Name = "Pouch";
-            this.Pouch.Size = new System.Drawing.Size(584, 299);
+            this.Pouch.Size = new System.Drawing.Size(584, 305);
             this.Pouch.TabIndex = 4;
             this.Pouch.Text = "Trading Items";
             this.Pouch.UseVisualStyleBackColor = true;
@@ -256,11 +259,21 @@
             this.DogNameLabel.TabIndex = 3;
             this.DogNameLabel.Text = "Dog Name";
             // 
+            // BoneCheckBox
+            // 
+            this.BoneCheckBox.AutoSize = true;
+            this.BoneCheckBox.Location = new System.Drawing.Point(3, 6);
+            this.BoneCheckBox.Name = "BoneCheckBox";
+            this.BoneCheckBox.Size = new System.Drawing.Size(51, 17);
+            this.BoneCheckBox.TabIndex = 0;
+            this.BoneCheckBox.Text = "Bone";
+            this.BoneCheckBox.UseVisualStyleBackColor = true;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 364);
+            this.ClientSize = new System.Drawing.Size(616, 370);
             this.Controls.Add(this.SaveTab);
             this.Controls.Add(this.MenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -270,6 +283,8 @@
             this.SaveTab.ResumeLayout(false);
             this.StatsTab.ResumeLayout(false);
             this.StatsTab.PerformLayout();
+            this.EquipmentTab.ResumeLayout(false);
+            this.EquipmentTab.PerformLayout();
             this.MenuStrip.ResumeLayout(false);
             this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -302,6 +317,7 @@
         private System.Windows.Forms.Label BoyNameLabel;
         private System.Windows.Forms.TextBox DogNameTextBox;
         private System.Windows.Forms.TextBox BoyNameTextBox;
+        private System.Windows.Forms.CheckBox BoneCheckBox;
     }
 }
 
