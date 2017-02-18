@@ -59,6 +59,7 @@
     <Compile Include="Classes\LoadSRAM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Sanity.cs" />
+    <Compile Include="Classes\SRAM.cs" />
     <EmbeddedResource Include="Forms\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
