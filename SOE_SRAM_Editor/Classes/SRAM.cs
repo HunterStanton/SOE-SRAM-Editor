@@ -31,6 +31,8 @@ namespace SOE_SRAM_Editor
             public Helmet helmet = new Helmet();
             public Gauntlet gauntlet = new Gauntlet();
             public Collar collar = new Collar();
+            public Charms charms = new Charms();
+            public TradeItems tradeitems = new TradeItems();
         }
 
         /// <summary>
@@ -227,6 +229,47 @@ namespace SOE_SRAM_Editor
             public int SpikyCollar;
             public int DefenderCollar;
             public int SpotsCollar;
+        }
+
+        /// <summary>
+        /// Charm items that give various in-game buffs. You can either have or not have these, no values
+        /// </summary>
+        public class Charms
+        {
+            public bool ArmorPolish;
+            public bool ChocoboEgg;
+            public bool InsectIncense;
+            public bool JadeDisk;
+            public bool JaguarRing;
+            public bool MagicGourd;
+            public bool MoxaStick;
+            public bool OracleBone;
+            public bool RubyHeart;
+            public bool SilverSheath; // does not matter if you have this or not, a game bug always applies the effect
+            public bool StaffOfLife;
+            public bool SunStone;
+            public bool ThugsCloak;
+            public bool WizardsCoin;
+        }
+
+        /// <summary>
+        /// Items used in trading at the marketplace. Max 99
+        /// </summary>
+        public class TradeItems
+        {
+            public int AnnihilationAmulet;
+            public int Beads;
+            public int CeramicPot;
+            public int Chicken;
+            public int GoldenJackal;
+            public int JeweledScarab;
+            public int LimestoneTablet;
+            public int Perfume;
+            public int Rice;
+            public int Spice;
+            public int SouvenirSpoon;
+            public int Tapestry;
+            public int TicketForExhibition;
         }
     }
 }
