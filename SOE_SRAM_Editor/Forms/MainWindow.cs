@@ -103,5 +103,17 @@ namespace SOE_SRAM_Editor
             return;
         }
         #endregion
+
+        #region About stuff.
+        /// <summary>
+        ///  Used when the user clicks on the About menu option.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AboutMenu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Secret of Evermore SRAM Editor v0.0 Alpha\nCopyright 2017 Hunter Stanton", "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        #endregion
     }
 }

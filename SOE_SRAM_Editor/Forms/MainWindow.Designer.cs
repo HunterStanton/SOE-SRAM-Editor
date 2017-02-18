@@ -46,6 +46,7 @@
             this.SaveSlot2MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveSlot3MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveSlot4MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveTab.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -114,7 +115,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileMenu,
-            this.SaveSlotMenu});
+            this.SaveSlotMenu,
+            this.AboutMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(616, 24);
@@ -203,6 +205,13 @@
             this.SaveSlot4MenuItem.Text = "Save Slot 4";
             this.SaveSlot4MenuItem.Click += new System.EventHandler(this.SaveSlot4MenuItem_Click);
             // 
+            // AboutMenu
+            // 
+            this.AboutMenu.Name = "AboutMenu";
+            this.AboutMenu.Size = new System.Drawing.Size(52, 20);
+            this.AboutMenu.Text = "About";
+            this.AboutMenu.Click += new System.EventHandler(this.AboutMenu_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,6 +250,7 @@
         private System.Windows.Forms.ToolStripMenuItem SaveSlot2MenuItem;
         private System.Windows.Forms.ToolStripMenuItem SaveSlot3MenuItem;
         private System.Windows.Forms.ToolStripMenuItem SaveSlot4MenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AboutMenu;
     }
 }
 
