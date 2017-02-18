@@ -29,6 +29,8 @@ namespace SOE_SRAM_Editor
             public Items items = new Items();
             public Armor armor = new Armor();
             public Helmet helmet = new Helmet();
+            public Gauntlet gauntlet = new Gauntlet();
+            public Collar collar = new Collar();
         }
 
         /// <summary>
@@ -202,7 +204,18 @@ namespace SOE_SRAM_Editor
         /// </summary>
         public class Gauntlet
         {
-
+            public int VineBracelet;
+            public int MammothGuard;
+            public int ClawGuard;
+            public int SerpentBracer;
+            public int BronzeGauntlet;
+            public int GlovesOfRa;
+            public int IronBracer;
+            public int MagiciansRing;
+            public int DragonsClaw;
+            public int Cyberglove;
+            public int ProtectorRing;
+            public int VirtualGlove;
         }
 
         /// <summary>
