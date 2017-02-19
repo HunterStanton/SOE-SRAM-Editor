@@ -31,7 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.SaveTab = new System.Windows.Forms.TabControl();
             this.StatsTab = new System.Windows.Forms.TabPage();
+            this.DogStatsBox = new System.Windows.Forms.GroupBox();
+            this.BoyStatsBox = new System.Windows.Forms.GroupBox();
+            this.MoneyGroup = new System.Windows.Forms.GroupBox();
+            this.CreditsTextBox = new System.Windows.Forms.TextBox();
+            this.CoinsTextBox = new System.Windows.Forms.TextBox();
+            this.CreditsLabel = new System.Windows.Forms.Label();
+            this.CoinsLabel = new System.Windows.Forms.Label();
+            this.JewelsLabel = new System.Windows.Forms.Label();
+            this.TalonsLabel = new System.Windows.Forms.Label();
+            this.JewelsTextBox = new System.Windows.Forms.TextBox();
+            this.TalonsTextBox = new System.Windows.Forms.TextBox();
+            this.NamesGroup = new System.Windows.Forms.GroupBox();
+            this.BoyNameLabel = new System.Windows.Forms.Label();
+            this.DogNameLabel = new System.Windows.Forms.Label();
+            this.BoyNameTextBox = new System.Windows.Forms.TextBox();
+            this.DogNameTextBox = new System.Windows.Forms.TextBox();
             this.EquipmentTab = new System.Windows.Forms.TabPage();
+            this.BoneCheckBox = new System.Windows.Forms.CheckBox();
             this.AlchemyTab = new System.Windows.Forms.TabPage();
             this.InventoryTab = new System.Windows.Forms.TabPage();
             this.TradingItems = new System.Windows.Forms.TabPage();
@@ -44,44 +61,28 @@
             this.ExitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveSlotMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveSlot1MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveSlotSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.SaveSlot2MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveSlotSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.SaveSlot3MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveSlotSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.SaveSlot4MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.BoyNameTextBox = new System.Windows.Forms.TextBox();
-            this.DogNameTextBox = new System.Windows.Forms.TextBox();
-            this.BoyNameLabel = new System.Windows.Forms.Label();
-            this.DogNameLabel = new System.Windows.Forms.Label();
-            this.BoneCheckBox = new System.Windows.Forms.CheckBox();
-            this.NamesGroup = new System.Windows.Forms.GroupBox();
-            this.MoneyGroup = new System.Windows.Forms.GroupBox();
-            this.BoyStatsBox = new System.Windows.Forms.GroupBox();
-            this.DogStatsBox = new System.Windows.Forms.GroupBox();
-            this.TalonsTextBox = new System.Windows.Forms.TextBox();
-            this.JewelsTextBox = new System.Windows.Forms.TextBox();
-            this.TalonsLabel = new System.Windows.Forms.Label();
-            this.JewelsLabel = new System.Windows.Forms.Label();
-            this.CreditsLabel = new System.Windows.Forms.Label();
-            this.CoinsLabel = new System.Windows.Forms.Label();
-            this.CreditsTextBox = new System.Windows.Forms.TextBox();
-            this.CoinsTextBox = new System.Windows.Forms.TextBox();
             this.experimentalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DisableLimitsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExperimentalSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.EnableLimitsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.LimitsLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.SaveSlotSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.SaveSlotSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.SaveSlotSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.ExperimentalSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.SaveSlotLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.RegionLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.OpenSRAMDialog = new System.Windows.Forms.OpenFileDialog();
             this.SaveTab.SuspendLayout();
             this.StatsTab.SuspendLayout();
+            this.MoneyGroup.SuspendLayout();
+            this.NamesGroup.SuspendLayout();
             this.EquipmentTab.SuspendLayout();
             this.MenuStrip.SuspendLayout();
-            this.NamesGroup.SuspendLayout();
-            this.MoneyGroup.SuspendLayout();
             this.StatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,6 +113,156 @@
             this.StatsTab.Text = "Stats";
             this.StatsTab.UseVisualStyleBackColor = true;
             // 
+            // DogStatsBox
+            // 
+            this.DogStatsBox.Location = new System.Drawing.Point(6, 250);
+            this.DogStatsBox.Name = "DogStatsBox";
+            this.DogStatsBox.Size = new System.Drawing.Size(572, 79);
+            this.DogStatsBox.TabIndex = 7;
+            this.DogStatsBox.TabStop = false;
+            this.DogStatsBox.Text = "DogStats";
+            // 
+            // BoyStatsBox
+            // 
+            this.BoyStatsBox.Location = new System.Drawing.Point(6, 165);
+            this.BoyStatsBox.Name = "BoyStatsBox";
+            this.BoyStatsBox.Size = new System.Drawing.Size(572, 79);
+            this.BoyStatsBox.TabIndex = 6;
+            this.BoyStatsBox.TabStop = false;
+            this.BoyStatsBox.Text = "Boy Stats";
+            // 
+            // MoneyGroup
+            // 
+            this.MoneyGroup.Controls.Add(this.CreditsTextBox);
+            this.MoneyGroup.Controls.Add(this.CoinsTextBox);
+            this.MoneyGroup.Controls.Add(this.CreditsLabel);
+            this.MoneyGroup.Controls.Add(this.CoinsLabel);
+            this.MoneyGroup.Controls.Add(this.JewelsLabel);
+            this.MoneyGroup.Controls.Add(this.TalonsLabel);
+            this.MoneyGroup.Controls.Add(this.JewelsTextBox);
+            this.MoneyGroup.Controls.Add(this.TalonsTextBox);
+            this.MoneyGroup.Location = new System.Drawing.Point(6, 87);
+            this.MoneyGroup.Name = "MoneyGroup";
+            this.MoneyGroup.Size = new System.Drawing.Size(572, 72);
+            this.MoneyGroup.TabIndex = 5;
+            this.MoneyGroup.TabStop = false;
+            this.MoneyGroup.Text = "Money";
+            // 
+            // CreditsTextBox
+            // 
+            this.CreditsTextBox.Location = new System.Drawing.Point(279, 45);
+            this.CreditsTextBox.Name = "CreditsTextBox";
+            this.CreditsTextBox.Size = new System.Drawing.Size(248, 20);
+            this.CreditsTextBox.TabIndex = 7;
+            this.CreditsTextBox.Text = "0";
+            // 
+            // CoinsTextBox
+            // 
+            this.CoinsTextBox.Location = new System.Drawing.Point(279, 19);
+            this.CoinsTextBox.Name = "CoinsTextBox";
+            this.CoinsTextBox.Size = new System.Drawing.Size(248, 20);
+            this.CoinsTextBox.TabIndex = 6;
+            this.CoinsTextBox.Text = "0";
+            // 
+            // CreditsLabel
+            // 
+            this.CreditsLabel.AutoSize = true;
+            this.CreditsLabel.Location = new System.Drawing.Point(533, 49);
+            this.CreditsLabel.Name = "CreditsLabel";
+            this.CreditsLabel.Size = new System.Drawing.Size(39, 13);
+            this.CreditsLabel.TabIndex = 5;
+            this.CreditsLabel.Text = "Credits";
+            // 
+            // CoinsLabel
+            // 
+            this.CoinsLabel.AutoSize = true;
+            this.CoinsLabel.Location = new System.Drawing.Point(533, 22);
+            this.CoinsLabel.Name = "CoinsLabel";
+            this.CoinsLabel.Size = new System.Drawing.Size(33, 13);
+            this.CoinsLabel.TabIndex = 4;
+            this.CoinsLabel.Text = "Coins";
+            // 
+            // JewelsLabel
+            // 
+            this.JewelsLabel.AutoSize = true;
+            this.JewelsLabel.Location = new System.Drawing.Point(238, 49);
+            this.JewelsLabel.Name = "JewelsLabel";
+            this.JewelsLabel.Size = new System.Drawing.Size(39, 13);
+            this.JewelsLabel.TabIndex = 3;
+            this.JewelsLabel.Text = "Jewels";
+            // 
+            // TalonsLabel
+            // 
+            this.TalonsLabel.AutoSize = true;
+            this.TalonsLabel.Location = new System.Drawing.Point(238, 23);
+            this.TalonsLabel.Name = "TalonsLabel";
+            this.TalonsLabel.Size = new System.Drawing.Size(39, 13);
+            this.TalonsLabel.TabIndex = 2;
+            this.TalonsLabel.Text = "Talons";
+            // 
+            // JewelsTextBox
+            // 
+            this.JewelsTextBox.Location = new System.Drawing.Point(7, 46);
+            this.JewelsTextBox.Name = "JewelsTextBox";
+            this.JewelsTextBox.Size = new System.Drawing.Size(225, 20);
+            this.JewelsTextBox.TabIndex = 1;
+            this.JewelsTextBox.Text = "0";
+            // 
+            // TalonsTextBox
+            // 
+            this.TalonsTextBox.Location = new System.Drawing.Point(7, 20);
+            this.TalonsTextBox.Name = "TalonsTextBox";
+            this.TalonsTextBox.Size = new System.Drawing.Size(225, 20);
+            this.TalonsTextBox.TabIndex = 0;
+            this.TalonsTextBox.Text = "0";
+            // 
+            // NamesGroup
+            // 
+            this.NamesGroup.Controls.Add(this.BoyNameLabel);
+            this.NamesGroup.Controls.Add(this.DogNameLabel);
+            this.NamesGroup.Controls.Add(this.BoyNameTextBox);
+            this.NamesGroup.Controls.Add(this.DogNameTextBox);
+            this.NamesGroup.Location = new System.Drawing.Point(6, 6);
+            this.NamesGroup.Name = "NamesGroup";
+            this.NamesGroup.Size = new System.Drawing.Size(572, 75);
+            this.NamesGroup.TabIndex = 4;
+            this.NamesGroup.TabStop = false;
+            this.NamesGroup.Text = "Names";
+            // 
+            // BoyNameLabel
+            // 
+            this.BoyNameLabel.AutoSize = true;
+            this.BoyNameLabel.Location = new System.Drawing.Point(508, 22);
+            this.BoyNameLabel.Name = "BoyNameLabel";
+            this.BoyNameLabel.Size = new System.Drawing.Size(56, 13);
+            this.BoyNameLabel.TabIndex = 2;
+            this.BoyNameLabel.Text = "Boy Name";
+            // 
+            // DogNameLabel
+            // 
+            this.DogNameLabel.AutoSize = true;
+            this.DogNameLabel.Location = new System.Drawing.Point(508, 48);
+            this.DogNameLabel.Name = "DogNameLabel";
+            this.DogNameLabel.Size = new System.Drawing.Size(58, 13);
+            this.DogNameLabel.TabIndex = 3;
+            this.DogNameLabel.Text = "Dog Name";
+            // 
+            // BoyNameTextBox
+            // 
+            this.BoyNameTextBox.Location = new System.Drawing.Point(6, 19);
+            this.BoyNameTextBox.Name = "BoyNameTextBox";
+            this.BoyNameTextBox.Size = new System.Drawing.Size(498, 20);
+            this.BoyNameTextBox.TabIndex = 0;
+            this.BoyNameTextBox.Text = "Boy";
+            // 
+            // DogNameTextBox
+            // 
+            this.DogNameTextBox.Location = new System.Drawing.Point(6, 45);
+            this.DogNameTextBox.Name = "DogNameTextBox";
+            this.DogNameTextBox.Size = new System.Drawing.Size(498, 20);
+            this.DogNameTextBox.TabIndex = 1;
+            this.DogNameTextBox.Text = "Dog";
+            // 
             // EquipmentTab
             // 
             this.EquipmentTab.Controls.Add(this.BoneCheckBox);
@@ -122,6 +273,16 @@
             this.EquipmentTab.TabIndex = 1;
             this.EquipmentTab.Text = "Equipment";
             this.EquipmentTab.UseVisualStyleBackColor = true;
+            // 
+            // BoneCheckBox
+            // 
+            this.BoneCheckBox.AutoSize = true;
+            this.BoneCheckBox.Location = new System.Drawing.Point(3, 6);
+            this.BoneCheckBox.Name = "BoneCheckBox";
+            this.BoneCheckBox.Size = new System.Drawing.Size(51, 17);
+            this.BoneCheckBox.TabIndex = 0;
+            this.BoneCheckBox.Text = "Bone";
+            this.BoneCheckBox.UseVisualStyleBackColor = true;
             // 
             // AlchemyTab
             // 
@@ -223,28 +384,43 @@
             // SaveSlot1MenuItem
             // 
             this.SaveSlot1MenuItem.Name = "SaveSlot1MenuItem";
-            this.SaveSlot1MenuItem.Size = new System.Drawing.Size(152, 22);
+            this.SaveSlot1MenuItem.Size = new System.Drawing.Size(130, 22);
             this.SaveSlot1MenuItem.Text = "Save Slot 1";
             this.SaveSlot1MenuItem.Click += new System.EventHandler(this.SaveSlot1MenuItem_Click);
+            // 
+            // SaveSlotSeparator1
+            // 
+            this.SaveSlotSeparator1.Name = "SaveSlotSeparator1";
+            this.SaveSlotSeparator1.Size = new System.Drawing.Size(127, 6);
             // 
             // SaveSlot2MenuItem
             // 
             this.SaveSlot2MenuItem.Name = "SaveSlot2MenuItem";
-            this.SaveSlot2MenuItem.Size = new System.Drawing.Size(152, 22);
+            this.SaveSlot2MenuItem.Size = new System.Drawing.Size(130, 22);
             this.SaveSlot2MenuItem.Text = "Save Slot 2";
             this.SaveSlot2MenuItem.Click += new System.EventHandler(this.SaveSlot2MenuItem_Click);
+            // 
+            // SaveSlotSeparator2
+            // 
+            this.SaveSlotSeparator2.Name = "SaveSlotSeparator2";
+            this.SaveSlotSeparator2.Size = new System.Drawing.Size(127, 6);
             // 
             // SaveSlot3MenuItem
             // 
             this.SaveSlot3MenuItem.Name = "SaveSlot3MenuItem";
-            this.SaveSlot3MenuItem.Size = new System.Drawing.Size(152, 22);
+            this.SaveSlot3MenuItem.Size = new System.Drawing.Size(130, 22);
             this.SaveSlot3MenuItem.Text = "Save Slot 3";
             this.SaveSlot3MenuItem.Click += new System.EventHandler(this.SaveSlot3MenuItem_Click);
+            // 
+            // SaveSlotSeparator3
+            // 
+            this.SaveSlotSeparator3.Name = "SaveSlotSeparator3";
+            this.SaveSlotSeparator3.Size = new System.Drawing.Size(127, 6);
             // 
             // SaveSlot4MenuItem
             // 
             this.SaveSlot4MenuItem.Name = "SaveSlot4MenuItem";
-            this.SaveSlot4MenuItem.Size = new System.Drawing.Size(152, 22);
+            this.SaveSlot4MenuItem.Size = new System.Drawing.Size(130, 22);
             this.SaveSlot4MenuItem.Text = "Save Slot 4";
             this.SaveSlot4MenuItem.Click += new System.EventHandler(this.SaveSlot4MenuItem_Click);
             // 
@@ -254,166 +430,6 @@
             this.AboutMenu.Size = new System.Drawing.Size(52, 20);
             this.AboutMenu.Text = "About";
             this.AboutMenu.Click += new System.EventHandler(this.AboutMenu_Click);
-            // 
-            // BoyNameTextBox
-            // 
-            this.BoyNameTextBox.Location = new System.Drawing.Point(6, 19);
-            this.BoyNameTextBox.Name = "BoyNameTextBox";
-            this.BoyNameTextBox.Size = new System.Drawing.Size(498, 20);
-            this.BoyNameTextBox.TabIndex = 0;
-            this.BoyNameTextBox.Text = "Boy";
-            // 
-            // DogNameTextBox
-            // 
-            this.DogNameTextBox.Location = new System.Drawing.Point(6, 45);
-            this.DogNameTextBox.Name = "DogNameTextBox";
-            this.DogNameTextBox.Size = new System.Drawing.Size(498, 20);
-            this.DogNameTextBox.TabIndex = 1;
-            this.DogNameTextBox.Text = "Dog";
-            // 
-            // BoyNameLabel
-            // 
-            this.BoyNameLabel.AutoSize = true;
-            this.BoyNameLabel.Location = new System.Drawing.Point(508, 22);
-            this.BoyNameLabel.Name = "BoyNameLabel";
-            this.BoyNameLabel.Size = new System.Drawing.Size(56, 13);
-            this.BoyNameLabel.TabIndex = 2;
-            this.BoyNameLabel.Text = "Boy Name";
-            // 
-            // DogNameLabel
-            // 
-            this.DogNameLabel.AutoSize = true;
-            this.DogNameLabel.Location = new System.Drawing.Point(508, 48);
-            this.DogNameLabel.Name = "DogNameLabel";
-            this.DogNameLabel.Size = new System.Drawing.Size(58, 13);
-            this.DogNameLabel.TabIndex = 3;
-            this.DogNameLabel.Text = "Dog Name";
-            // 
-            // BoneCheckBox
-            // 
-            this.BoneCheckBox.AutoSize = true;
-            this.BoneCheckBox.Location = new System.Drawing.Point(3, 6);
-            this.BoneCheckBox.Name = "BoneCheckBox";
-            this.BoneCheckBox.Size = new System.Drawing.Size(51, 17);
-            this.BoneCheckBox.TabIndex = 0;
-            this.BoneCheckBox.Text = "Bone";
-            this.BoneCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // NamesGroup
-            // 
-            this.NamesGroup.Controls.Add(this.BoyNameLabel);
-            this.NamesGroup.Controls.Add(this.DogNameLabel);
-            this.NamesGroup.Controls.Add(this.BoyNameTextBox);
-            this.NamesGroup.Controls.Add(this.DogNameTextBox);
-            this.NamesGroup.Location = new System.Drawing.Point(6, 6);
-            this.NamesGroup.Name = "NamesGroup";
-            this.NamesGroup.Size = new System.Drawing.Size(572, 75);
-            this.NamesGroup.TabIndex = 4;
-            this.NamesGroup.TabStop = false;
-            this.NamesGroup.Text = "Names";
-            // 
-            // MoneyGroup
-            // 
-            this.MoneyGroup.Controls.Add(this.CreditsTextBox);
-            this.MoneyGroup.Controls.Add(this.CoinsTextBox);
-            this.MoneyGroup.Controls.Add(this.CreditsLabel);
-            this.MoneyGroup.Controls.Add(this.CoinsLabel);
-            this.MoneyGroup.Controls.Add(this.JewelsLabel);
-            this.MoneyGroup.Controls.Add(this.TalonsLabel);
-            this.MoneyGroup.Controls.Add(this.JewelsTextBox);
-            this.MoneyGroup.Controls.Add(this.TalonsTextBox);
-            this.MoneyGroup.Location = new System.Drawing.Point(6, 87);
-            this.MoneyGroup.Name = "MoneyGroup";
-            this.MoneyGroup.Size = new System.Drawing.Size(572, 72);
-            this.MoneyGroup.TabIndex = 5;
-            this.MoneyGroup.TabStop = false;
-            this.MoneyGroup.Text = "Money";
-            // 
-            // BoyStatsBox
-            // 
-            this.BoyStatsBox.Location = new System.Drawing.Point(6, 165);
-            this.BoyStatsBox.Name = "BoyStatsBox";
-            this.BoyStatsBox.Size = new System.Drawing.Size(572, 79);
-            this.BoyStatsBox.TabIndex = 6;
-            this.BoyStatsBox.TabStop = false;
-            this.BoyStatsBox.Text = "Boy Stats";
-            // 
-            // DogStatsBox
-            // 
-            this.DogStatsBox.Location = new System.Drawing.Point(6, 250);
-            this.DogStatsBox.Name = "DogStatsBox";
-            this.DogStatsBox.Size = new System.Drawing.Size(572, 79);
-            this.DogStatsBox.TabIndex = 7;
-            this.DogStatsBox.TabStop = false;
-            this.DogStatsBox.Text = "DogStats";
-            // 
-            // TalonsTextBox
-            // 
-            this.TalonsTextBox.Location = new System.Drawing.Point(7, 20);
-            this.TalonsTextBox.Name = "TalonsTextBox";
-            this.TalonsTextBox.Size = new System.Drawing.Size(225, 20);
-            this.TalonsTextBox.TabIndex = 0;
-            this.TalonsTextBox.Text = "0";
-            // 
-            // JewelsTextBox
-            // 
-            this.JewelsTextBox.Location = new System.Drawing.Point(7, 46);
-            this.JewelsTextBox.Name = "JewelsTextBox";
-            this.JewelsTextBox.Size = new System.Drawing.Size(225, 20);
-            this.JewelsTextBox.TabIndex = 1;
-            this.JewelsTextBox.Text = "0";
-            // 
-            // TalonsLabel
-            // 
-            this.TalonsLabel.AutoSize = true;
-            this.TalonsLabel.Location = new System.Drawing.Point(238, 23);
-            this.TalonsLabel.Name = "TalonsLabel";
-            this.TalonsLabel.Size = new System.Drawing.Size(39, 13);
-            this.TalonsLabel.TabIndex = 2;
-            this.TalonsLabel.Text = "Talons";
-            // 
-            // JewelsLabel
-            // 
-            this.JewelsLabel.AutoSize = true;
-            this.JewelsLabel.Location = new System.Drawing.Point(238, 49);
-            this.JewelsLabel.Name = "JewelsLabel";
-            this.JewelsLabel.Size = new System.Drawing.Size(39, 13);
-            this.JewelsLabel.TabIndex = 3;
-            this.JewelsLabel.Text = "Jewels";
-            // 
-            // CreditsLabel
-            // 
-            this.CreditsLabel.AutoSize = true;
-            this.CreditsLabel.Location = new System.Drawing.Point(533, 49);
-            this.CreditsLabel.Name = "CreditsLabel";
-            this.CreditsLabel.Size = new System.Drawing.Size(39, 13);
-            this.CreditsLabel.TabIndex = 5;
-            this.CreditsLabel.Text = "Credits";
-            // 
-            // CoinsLabel
-            // 
-            this.CoinsLabel.AutoSize = true;
-            this.CoinsLabel.Location = new System.Drawing.Point(533, 22);
-            this.CoinsLabel.Name = "CoinsLabel";
-            this.CoinsLabel.Size = new System.Drawing.Size(33, 13);
-            this.CoinsLabel.TabIndex = 4;
-            this.CoinsLabel.Text = "Coins";
-            // 
-            // CreditsTextBox
-            // 
-            this.CreditsTextBox.Location = new System.Drawing.Point(279, 45);
-            this.CreditsTextBox.Name = "CreditsTextBox";
-            this.CreditsTextBox.Size = new System.Drawing.Size(248, 20);
-            this.CreditsTextBox.TabIndex = 7;
-            this.CreditsTextBox.Text = "0";
-            // 
-            // CoinsTextBox
-            // 
-            this.CoinsTextBox.Location = new System.Drawing.Point(279, 19);
-            this.CoinsTextBox.Name = "CoinsTextBox";
-            this.CoinsTextBox.Size = new System.Drawing.Size(248, 20);
-            this.CoinsTextBox.TabIndex = 6;
-            this.CoinsTextBox.Text = "0";
             // 
             // experimentalToolStripMenuItem
             // 
@@ -428,14 +444,19 @@
             // DisableLimitsMenuItem
             // 
             this.DisableLimitsMenuItem.Name = "DisableLimitsMenuItem";
-            this.DisableLimitsMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.DisableLimitsMenuItem.Size = new System.Drawing.Size(147, 22);
             this.DisableLimitsMenuItem.Text = "Disable Limits";
             this.DisableLimitsMenuItem.Click += new System.EventHandler(this.DisableLimitsMenuItem_Click);
+            // 
+            // ExperimentalSeparator1
+            // 
+            this.ExperimentalSeparator1.Name = "ExperimentalSeparator1";
+            this.ExperimentalSeparator1.Size = new System.Drawing.Size(144, 6);
             // 
             // EnableLimitsMenuItem
             // 
             this.EnableLimitsMenuItem.Name = "EnableLimitsMenuItem";
-            this.EnableLimitsMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.EnableLimitsMenuItem.Size = new System.Drawing.Size(147, 22);
             this.EnableLimitsMenuItem.Text = "Enable Limits";
             this.EnableLimitsMenuItem.Click += new System.EventHandler(this.EnableLimitsMenuItem_Click);
             // 
@@ -456,26 +477,6 @@
             this.LimitsLabel.Size = new System.Drawing.Size(84, 17);
             this.LimitsLabel.Text = "Limits Enabled";
             // 
-            // SaveSlotSeparator1
-            // 
-            this.SaveSlotSeparator1.Name = "SaveSlotSeparator1";
-            this.SaveSlotSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // SaveSlotSeparator2
-            // 
-            this.SaveSlotSeparator2.Name = "SaveSlotSeparator2";
-            this.SaveSlotSeparator2.Size = new System.Drawing.Size(149, 6);
-            // 
-            // SaveSlotSeparator3
-            // 
-            this.SaveSlotSeparator3.Name = "SaveSlotSeparator3";
-            this.SaveSlotSeparator3.Size = new System.Drawing.Size(149, 6);
-            // 
-            // ExperimentalSeparator1
-            // 
-            this.ExperimentalSeparator1.Name = "ExperimentalSeparator1";
-            this.ExperimentalSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
             // SaveSlotLabel
             // 
             this.SaveSlotLabel.Name = "SaveSlotLabel";
@@ -487,6 +488,11 @@
             this.RegionLabel.Name = "RegionLabel";
             this.RegionLabel.Size = new System.Drawing.Size(100, 17);
             this.RegionLabel.Text = "No SRAM Loaded";
+            // 
+            // OpenSRAMDialog
+            // 
+            this.OpenSRAMDialog.DefaultExt = "srm";
+            this.OpenSRAMDialog.Filter = "Secret of Evermore SRAM Files|*.srm";
             // 
             // MainWindow
             // 
@@ -504,14 +510,14 @@
             this.Text = "Secret of Evermore SRAM Editor - No SRAM Loaded";
             this.SaveTab.ResumeLayout(false);
             this.StatsTab.ResumeLayout(false);
+            this.MoneyGroup.ResumeLayout(false);
+            this.MoneyGroup.PerformLayout();
+            this.NamesGroup.ResumeLayout(false);
+            this.NamesGroup.PerformLayout();
             this.EquipmentTab.ResumeLayout(false);
             this.EquipmentTab.PerformLayout();
             this.MenuStrip.ResumeLayout(false);
             this.MenuStrip.PerformLayout();
-            this.NamesGroup.ResumeLayout(false);
-            this.NamesGroup.PerformLayout();
-            this.MoneyGroup.ResumeLayout(false);
-            this.MoneyGroup.PerformLayout();
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -568,6 +574,7 @@
         private System.Windows.Forms.ToolStripSeparator ExperimentalSeparator1;
         private System.Windows.Forms.ToolStripStatusLabel SaveSlotLabel;
         private System.Windows.Forms.ToolStripStatusLabel RegionLabel;
+        private System.Windows.Forms.OpenFileDialog OpenSRAMDialog;
     }
 }
 

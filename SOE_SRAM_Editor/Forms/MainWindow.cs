@@ -20,6 +20,8 @@ namespace SOE_SRAM_Editor
             InitializeComponent();
         }
 
+        SRAM SaveRAM;
+
         #region File Menu stuff
         /// <summary>
         /// Used when the user selects the Exit option in the File menu.
@@ -52,6 +54,18 @@ namespace SOE_SRAM_Editor
         private void OpenFileMenuItem_Click(object sender, EventArgs e)
         {
             // Do nothing right now
+            if (OpenSRAMDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    SaveRAM = LoadSRAM.LoadSRAMFile(new System.IO.BinaryReader(OpenSRAMDialog.OpenFile()));
+                    return;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                }
+            }
             return;
         }
 

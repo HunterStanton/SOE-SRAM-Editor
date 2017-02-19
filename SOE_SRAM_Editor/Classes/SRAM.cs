@@ -14,13 +14,16 @@ namespace SOE_SRAM_Editor
     class SRAM
     {
         // The 4 Save slots that can exist in an SRAM file
-        public Save[] slots = new Save[4];
+        public Save[] slot = new Save[] { new Save(), new Save(), new Save(), new Save() };
 
         /// <summary>
         /// Represents a single save slot
         /// </summary>
         public class Save
         {
+            // Sanity check
+            public ushort sanity;
+
             public Boy boy = new Boy();
             public Dog dog = new Dog();
             public Money money = new Money();
