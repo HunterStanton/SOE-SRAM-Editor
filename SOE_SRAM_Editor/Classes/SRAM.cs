@@ -24,6 +24,9 @@ namespace SOE_SRAM_Editor
             // Sanity check
             public ushort sanity;
 
+            // Where the save was committed ingame e.g. "Fire Eyes' Village"
+            public string location;
+
             public Boy boy = new Boy();
             public Dog dog = new Dog();
             public Money money = new Money();
@@ -47,6 +50,7 @@ namespace SOE_SRAM_Editor
             public int Level;
             public int Experience;
             public int HP; // HP at the time of the save. Max 999
+            public int MaxHP;
         }
 
         /// <summary>
@@ -58,6 +62,7 @@ namespace SOE_SRAM_Editor
             public int Level;
             public int Experience;
             public int HP; // HP at the time of the save. Max 999
+            public int MaxHP;
 
             // Only Dog has this because Dog doesn't have switchable weapons
             public int AttackLevel;

@@ -21,13 +21,23 @@ namespace SOE_SRAM_Editor
 
             for(int i = 0;i < 4;i++)
             {
+                // Always make sure we come back to the beginning of the next save slot before reading
+                reader.BaseStream.Position = 2 + ((i) * 0x331);
+
+                // Theres honestly not a whole lot of point in reading this, we always recalculate it and don't show it in UI
                 sram.slot[i].sanity = reader.ReadUInt16();
-                
-                // Skip past the save location name
-                reader.ReadBytes(0x24);
+
+                sram.slot[i].location = Encoding.UTF8.GetString(reader.ReadBytes(0x24)).Split('\0')[0];
 
                 sram.slot[i].boy.Name = Encoding.UTF8.GetString(reader.ReadBytes(36)).Split('\0')[0];
                 sram.slot[i].dog.Name = Encoding.UTF8.GetString(reader.ReadBytes(36)).Split('\0')[0];
+
+                sram.slot[i].boy.HP = reader.ReadUInt16();
+                reader.ReadBytes(0x1e);
+                sram.slot[i].boy.MaxHP = reader.ReadUInt16();
+                reader.ReadBytes(0xa);
+
+                sram.slot[i].boy.Experience = reader.ReadInt24();
             }
             return sram;
         }

@@ -56,15 +56,8 @@ namespace SOE_SRAM_Editor
             // Do nothing right now
             if (OpenSRAMDialog.ShowDialog() == DialogResult.OK)
             {
-                try
-                {
                     SaveRAM = LoadSRAM.LoadSRAMFile(new System.IO.BinaryReader(OpenSRAMDialog.OpenFile()));
                     return;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
-                }
             }
             return;
         }
