@@ -32,12 +32,30 @@ namespace SOE_SRAM_Editor
                 sram.slot[i].boy.Name = Encoding.UTF8.GetString(reader.ReadBytes(36)).Split('\0')[0];
                 sram.slot[i].dog.Name = Encoding.UTF8.GetString(reader.ReadBytes(36)).Split('\0')[0];
 
+                // Read boy stats
                 sram.slot[i].boy.HP = reader.ReadUInt16();
                 reader.ReadBytes(0x1e);
                 sram.slot[i].boy.MaxHP = reader.ReadUInt16();
                 reader.ReadBytes(0xa);
-
                 sram.slot[i].boy.Experience = reader.ReadInt24();
+                sram.slot[i].boy.Level = reader.ReadByte();
+                reader.ReadBytes(0x11);
+
+                // Read dog stats
+                sram.slot[i].dog.HP = reader.ReadUInt16();
+                reader.ReadBytes(0x1e);
+                sram.slot[i].dog.MaxHP = reader.ReadUInt16();
+                reader.ReadBytes(0xa);
+                sram.slot[i].dog.Experience = reader.ReadInt24();
+                sram.slot[i].dog.Level = reader.ReadByte();
+
+                reader.ReadBytes(0x1d);
+
+                // Read money
+                sram.slot[i].money.Talons = reader.ReadInt24();
+                sram.slot[i].money.Jewels = reader.ReadInt24();
+                sram.slot[i].money.Coins = reader.ReadInt24();
+                sram.slot[i].money.Credits = reader.ReadInt24();
             }
             return sram;
         }

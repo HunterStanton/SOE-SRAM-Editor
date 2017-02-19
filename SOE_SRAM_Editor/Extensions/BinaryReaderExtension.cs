@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SOE_SRAM_Editor
 {
-    public static class BinaryReaderAddon
+    public static class BinaryReaderExtension
     {
         
         /// <summary>
