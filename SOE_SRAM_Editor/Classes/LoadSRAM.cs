@@ -56,8 +56,74 @@ namespace SOE_SRAM_Editor
                 sram.slot[i].money.Jewels = reader.ReadInt24();
                 sram.slot[i].money.Coins = reader.ReadInt24();
                 sram.slot[i].money.Credits = reader.ReadInt24();
+
+                reader.ReadBytes(0xd);
+
+                // Divide by 2.65 to get the proper XP/minor level
+                sram.slot[i].weapons.BoneCrusherXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.BoneCrusherLevel = reader.ReadByte();
+                sram.slot[i].weapons.GladiatorSwordXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.GladiatorSwordLevel = reader.ReadByte();
+                sram.slot[i].weapons.CrusaderSwordXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.CrusaderSwordLevel = reader.ReadByte();
+                sram.slot[i].weapons.NeutronBladeXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.NeutronBladeLevel = reader.ReadByte();
+                sram.slot[i].weapons.SpidersClawXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.SpidersClawLevel = reader.ReadByte();
+                sram.slot[i].weapons.BronzeAxeXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.BronzeAxeLevel = reader.ReadByte();
+                sram.slot[i].weapons.KnightBasherXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.KnightBasherLevel = reader.ReadByte();
+                sram.slot[i].weapons.AtomSmasherXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.AtomSmasherLevel = reader.ReadByte();
+                sram.slot[i].weapons.HornedSpearXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.HornedSpearLevel = reader.ReadByte();
+                sram.slot[i].weapons.BronzeSpearXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.BronzeSpearLevel = reader.ReadByte();
+                sram.slot[i].weapons.LanceXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.LanceLevel = reader.ReadByte();
+                sram.slot[i].weapons.LaserLanceXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].weapons.LaserLanceLevel = reader.ReadByte();
+
+                reader.ReadBytes(0x10);
+
+                sram.slot[i].dog.AttackXP = Convert.ToInt32(reader.ReadByte() / 2.65);
+                sram.slot[i].dog.AttackLevel = reader.ReadByte();
+
+
             }
             return sram;
         }
+
+        /// <summary>
+        /// The bits that represent if the user has the first half of weapons.
+        /// </summary>
+        [Flags]
+        public enum WeaponByte1 : byte
+        {
+            BoneCrusher = 1 << 1,
+            GladiatorSword = 1 << 2,
+            CrusaderSword = 1 << 3,
+            NeutronBlade = 1 << 4,
+            SpidersClaw = 1 << 5,
+            BronzeAxe = 1 << 6,
+            KnightBasher = 1 << 7
+
+        }
+
+        /// <summary>
+        /// The bits that represent if the user has the second half of weapons.
+        /// </summary>
+        [Flags]
+        public enum WeaponByte2 : byte
+        {
+            AtomSmasher = 1 << 0,
+            HornedSpear = 1 << 1,
+            BronzeSpear = 1 << 2,
+            Lance = 1 << 3,
+            LaserLance = 1 << 4,
+            Bazooka = 1 << 5
+        }
     }
+
 }
