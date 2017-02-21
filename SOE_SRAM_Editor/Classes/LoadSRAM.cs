@@ -205,6 +205,81 @@ namespace SOE_SRAM_Editor
             LaserLance = 1 << 4,
             Bazooka = 1 << 5
         }
+
+        /// <summary>
+        /// The bits that represent if the user has the first set of alchemy formulas.
+        /// </summary>
+        [Flags]
+        public enum Alchemy1 : byte
+        {
+            AcidRain = 1 << 0,
+            Atlas = 1 << 1,
+            Barrier = 1 << 2,
+            CallUp = 1 << 3,
+            Corrosion = 1 << 4,
+            Crush = 1 << 5,
+            Cure = 1 << 6,
+            Defend = 1 << 7,
+        }
+
+        /// <summary>
+        /// The bits that represent if the user has the second set of alchemy formulas.
+        /// </summary>
+        [Flags]
+        public enum Alchemy2 : byte
+        {
+            DoubleDrain = 1 << 0,
+            Drain = 1 << 1,
+            Energize = 1 << 2,
+            Escape = 1 << 3,
+            Explosion = 1 << 4,
+            Fireball = 1 << 5,
+            FirePower = 1 << 6,
+            Flash = 1 << 7,
+        }
+
+        /// <summary>
+        /// The bits that represent if the user has the third set of alchemy formulas.
+        /// </summary>
+        [Flags]
+        public enum Alchemy3 : byte
+        {
+            ForceField = 1 << 0,
+            Hardball = 1 << 1,
+            Heal = 1 << 2,
+            Lance = 1 << 3,
+            Laser = 1 << 4,
+            Levitate = 1 << 5,
+            LightningStorm = 1 << 6,
+            MiracleCure = 1 << 7,
+        }
+
+        /// <summary>
+        /// The bits that represent if the user has the forth set of alchemy formulas.
+        /// </summary>
+        [Flags]
+        public enum Alchemy4 : byte
+        {
+            Nitro = 1 << 0,
+            OneUp = 1 << 1,
+            Reflect = 1 << 2,
+            Regrowth = 1 << 3,
+            Revealer = 1 << 4,
+            Revive = 1 << 5,
+            SlowBurn = 1 << 6,
+            Speed = 1 << 7,
+        }
+
+        /// <summary>
+        /// The bits that represent if the user has the fifth set of alchemy formulas.
+        /// </summary>
+        [Flags]
+        public enum Alchemy5 : byte
+        {
+            Sting = 1 << 0,
+            Stop = 1 << 1,
+            SuperHeal = 1 << 2
+        }
     }
 
 }
