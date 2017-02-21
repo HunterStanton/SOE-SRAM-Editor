@@ -87,8 +87,23 @@ namespace SOE_SRAM_Editor
 
                 reader.ReadBytes(0x10);
 
+                // Once again divide by 2.65 to get the proper XP/minor level
                 sram.slot[i].dog.AttackXP = Convert.ToInt32(reader.ReadByte() / 2.65);
                 sram.slot[i].dog.AttackLevel = reader.ReadByte();
+
+                reader.ReadBytes(0x16);
+
+                sram.slot[i].alchemy.AcidRainXP = reader.ReadInt16();
+                sram.slot[i].alchemy.AtlasXP = reader.ReadInt16();
+                sram.slot[i].alchemy.BarrierXP = reader.ReadInt16();
+                sram.slot[i].alchemy.CallUpXP = reader.ReadInt16();
+                sram.slot[i].alchemy.CorrosionXP = reader.ReadInt16();
+                sram.slot[i].alchemy.CrushXP = reader.ReadInt16();
+                sram.slot[i].alchemy.CureXP = reader.ReadInt16();
+                sram.slot[i].alchemy.DefendXP = reader.ReadInt16();
+                sram.slot[i].alchemy.DoubleDrainXP = reader.ReadInt16();
+                sram.slot[i].alchemy.DrainXP = reader.ReadInt16();
+                sram.slot[i].alchemy.EnergizeXP = reader.ReadInt16();
 
 
             }

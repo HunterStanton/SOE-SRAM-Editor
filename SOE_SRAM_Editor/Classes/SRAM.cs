@@ -25,6 +25,7 @@ namespace SOE_SRAM_Editor
             public ushort sanity;
 
             // Where the save was committed ingame e.g. "Fire Eyes' Village"
+            // Not sure why we grab this, it isn't in the program UI
             public string location;
 
             public Boy boy = new Boy();
@@ -39,6 +40,7 @@ namespace SOE_SRAM_Editor
             public Collar collar = new Collar();
             public Charms charms = new Charms();
             public TradeItems tradeitems = new TradeItems();
+            public Alchemy alchemy = new Alchemy();
         }
 
         /// <summary>
