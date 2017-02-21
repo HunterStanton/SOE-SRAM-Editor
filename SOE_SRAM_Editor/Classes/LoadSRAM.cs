@@ -104,6 +104,72 @@ namespace SOE_SRAM_Editor
                 sram.slot[i].alchemy.DoubleDrainXP = reader.ReadInt16();
                 sram.slot[i].alchemy.DrainXP = reader.ReadInt16();
                 sram.slot[i].alchemy.EnergizeXP = reader.ReadInt16();
+                sram.slot[i].alchemy.EscapeXP = reader.ReadInt16();
+                sram.slot[i].alchemy.ExplosionXP = reader.ReadInt16();
+                sram.slot[i].alchemy.FireballXP = reader.ReadInt16();
+                sram.slot[i].alchemy.FirePowerXP = reader.ReadInt16();
+                sram.slot[i].alchemy.FlashXP = reader.ReadInt16();
+                sram.slot[i].alchemy.ForceFieldXP = reader.ReadInt16();
+                sram.slot[i].alchemy.HardBallXP = reader.ReadInt16();
+                sram.slot[i].alchemy.HealXP = reader.ReadInt16();
+                sram.slot[i].alchemy.LanceXP = reader.ReadInt16();
+
+                // XP for the unused alchemy formula, Laser. Can't get it legitimately and it does nothing, but its still here
+                reader.ReadInt16();
+
+                sram.slot[i].alchemy.LevitateXP = reader.ReadInt16();
+                sram.slot[i].alchemy.LightningStormXP = reader.ReadInt16();
+                sram.slot[i].alchemy.MiracleCureXP = reader.ReadInt16();
+                sram.slot[i].alchemy.NitroXP = reader.ReadInt16();
+                sram.slot[i].alchemy.OneUpXP = reader.ReadInt16();
+                sram.slot[i].alchemy.ReflectXP = reader.ReadInt16();
+                sram.slot[i].alchemy.RegrowthXP = reader.ReadInt16();
+                sram.slot[i].alchemy.RevealerXP = reader.ReadInt16();
+                sram.slot[i].alchemy.ReviveXP = reader.ReadInt16();
+                sram.slot[i].alchemy.SlowBurnXP = reader.ReadInt16();
+                sram.slot[i].alchemy.SpeedXP = reader.ReadInt16();
+                sram.slot[i].alchemy.StingXP = reader.ReadInt16();
+                sram.slot[i].alchemy.StopXP = reader.ReadInt16();
+                sram.slot[i].alchemy.SuperHealXP = reader.ReadInt16();
+
+                sram.slot[i].alchemy.AcidRainLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.AtlasLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.BarrierLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.CallUpLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.CorrosionLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.CrushLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.CureLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.DefendLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.DoubleDrainLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.DrainLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.EnergizeLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.EscapeLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.ExplosionLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.FireballLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.FirePowerLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.FlashLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.ForceFieldLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.HardBallLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.HealLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.LanceLevel = reader.ReadInt16();
+
+                // Level for the unused alchemy formula, Laser. Can't get it legitimately and it does nothing, but its still here
+                reader.ReadInt16();
+
+                sram.slot[i].alchemy.LevitateLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.LightningStormLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.MiracleCureLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.NitroLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.OneUpLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.ReflectLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.RegrowthLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.RevealerLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.ReviveLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.SlowBurnLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.SpeedLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.StingLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.StopLevel = reader.ReadInt16();
+                sram.slot[i].alchemy.SuperHealLevel = reader.ReadInt16();
 
 
             }
