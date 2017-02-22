@@ -9,6 +9,7 @@ namespace SOE_SRAM_Editor
 {
     /// <summary>
     /// Handles loading the SRAM file and grabbing information from it.
+    /// Using a binary reader, step by step
     /// </summary>
     class LoadSRAM
     {
@@ -170,6 +171,8 @@ namespace SOE_SRAM_Editor
                 sram.slot[i].alchemy.StingLevel = reader.ReadInt16();
                 sram.slot[i].alchemy.StopLevel = reader.ReadInt16();
                 sram.slot[i].alchemy.SuperHealLevel = reader.ReadInt16();
+
+                reader.ReadBytes(0x16);
 
 
             }
